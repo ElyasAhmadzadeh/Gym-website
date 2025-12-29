@@ -160,7 +160,8 @@ header .nav-link:hover {
 }
 
 .breadcrumb-item::before {
-    margin: 0 30px;
+    padding: 0;
+    margin: 0 2vw;
 }
 
 .breadcrumb-item a:hover {
@@ -170,40 +171,46 @@ header .nav-link:hover {
 #gallery-collapses img {
     height: 25vh;
 }
-.plans .card-img-overlay{
-    background-image: linear-gradient(rgba(0,0,0,.6) , rgba(0,0,0,.75));
+
+.plans .card-img-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .75));
     color: rgba(255, 255, 255, 1);
 }
-.card-img-overlay .list-group-item{
-    background-color: rgba(0,0,0,0);
+
+.card-img-overlay .list-group-item {
+    background-color: rgba(0, 0, 0, 0);
     border-color: white;
 }
-.plans .card{
-    box-shadow: 0 0 15px rgba(0,0,0,.8);
+
+.plans .card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .8);
     border: none;
 
 }
-.plans .card , .plans .card-img-overlay , .plans .card-img{
-        max-height: 510px;
+
+.plans .card,
+.plans .card-img-overlay,
+.plans .card-img {
+    max-height: 510px;
 }
-.register-form{
+
+.register-form {
     background-image: url(images/contact.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.register-form .form-container{
-    background-color: rgba(21, 31, 32 , .7);
-    clip-path:polygon(
-         0 0 ,
-        90% 0 , 
-         80% 100% ,
-         0 100%
-    ) ;
+
+.register-form .form-container {
+    background-color: rgba(21, 31, 32, .7);
+    clip-path: polygon(0 0,
+            90% 0,
+            80% 100%,
+            0 100%);
 }
-.register-form input[type = "email"] , 
-.register-form input[type = "text"]
-{
+
+.register-form input[type="email"],
+.register-form input[type="text"] {
     outline: none;
     border: none;
     border-bottom: 3px solid white;
@@ -211,20 +218,22 @@ header .nav-link:hover {
     box-shadow: none !important;
     transition: border 300ms;
 }
-.register-form input[type = "email"]:focus , 
-.register-form input[type = "text"]:focus
-{
+
+.register-form input[type="email"]:focus,
+.register-form input[type="text"]:focus {
     border-bottom: 3px solid rgb(255, 64, 0);
 }
 
-footer .nav-link{
+footer .nav-link {
     color: white !important;
     transition: 200ms color;
 }
-footer .nav-link:hover{
+
+footer .nav-link:hover {
     color: rgb(91, 200, 255) !important;
 }
-.fa-instagram{
+
+.fa-instagram {
     color: rgb(255, 192, 242);
 }
 
@@ -269,6 +278,11 @@ footer .nav-link:hover{
         height: 280px;
     }
 
+    .breadcrumb-item::before {
+        padding: 0;
+        margin-right: .25vw;
+    }
+
 }
 
 @media screen and (max-width:992px) {
@@ -278,9 +292,9 @@ footer .nav-link:hover{
         height: 280px;
     }
 
-    .register-form .form-container{
-    background-color: rgba(21, 31, 32 , .7);
-    clip-path:none;
-}
+    .register-form .form-container {
+        background-color: rgba(21, 31, 32, .7);
+        clip-path: none;
+    }
 
 }
